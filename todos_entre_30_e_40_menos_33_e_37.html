@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+
+<script>
+
+	function pulaLinha () {
+
+		document.write ("<br>");
+
+	}
+
+	function mostra (frase) {
+
+		document.write (frase);
+		pulaLinha();
+
+	}
+
+	var contador = 30;
+	var limite = 40;
+
+	mostra ("todos entre 30 e 40, exceto 33 e 37!");
+
+	while (contador <= limite) {
+
+		if (contador != 33 && contador != 37) {
+		mostra(contador);
+		}
+		
+		contador = contador + 1;
+		
+	}
+
+	mostra("fim");
+
+</script>

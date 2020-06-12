@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+
+<script>
+
+	function pulaLinha () {
+
+		document.write ("<br>");
+
+	}
+
+	function mostra (frase) {
+
+		document.write (frase);
+		pulaLinha();
+
+	}
+
+	var contador = 20;
+	var limite = 0;
+
+	mostra ("todos os numeros de 20 a 0: ");
+
+	while (contador >= limite) {
+
+		mostra(contador);
+		contador = contador - 1;
+		
+	}
+
+	mostra("fim");
+
+</script>

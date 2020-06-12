@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+
+<script>
+
+	function pulaLinha () {
+
+		document.write("<br>");
+
+	}
+
+	function mostra (frase) {
+
+		document.write(frase);
+		pulaLinha();
+
+	}
+
+	var anoAtual = 2020;
+	var anosPassados = anoAtual - 1500;
+	var idadeQuandoTemFilhos = 28;
+	var quantidadeDeGeracoes = anosPassados / idadeQuandoTemFilhos;
+
+	mostra("Já se passaram " + anosPassados + " anos, após a chegada dos portugueses ao Brasil")
+	mostra ("contruindo " + Math.round(quantidadeDeGeracoes) + " gerações até o ano atual!");
+
+
+
+</script>
