@@ -23,29 +23,37 @@
 	}
 
 	var sorteiaAte = 10;
-	var numeroPensado = sorteia(sorteiaAte);
+	var numeroPensado = sorteia (sorteiaAte);
 
-	console.log(numeroPensado);
+	console.log (numeroPensado);
 
-	var chute = parseInt(prompt ("Pensei em um numero!" + "\n" + "qual você acha que é? entre 0 e " + sorteiaAte + " : "));
+	var tentativa = 0;
+	var totalTentativa = 3;
 
-	if(numeroPensado == chute){
+	while (tentativa < totalTentativa) {
 
-		mostra("parabéns! você acertou.");
+		var chute = parseInt (prompt ("Pensei em um numero!" + "\n" + "qual você acha que é? entre 0 e " + sorteiaAte + " : "));
 
-	}
+		if (numeroPensado == chute) {
 
-	else {
+			mostra ("parabéns! você acertou, eu pensei no numero " + numeroPensado);
+			break;
 
-		if (numeroPensado > chute) {
+		}else {
 
-		mostra("não foi dessa vez, o numero que eu pensei era maior que " + chute);
+			if (numeroPensado > chute) {
 
-		} else {
+				mostra ("não foi dessa vez, o numero que eu pensei era maior que " + chute);
 
-			mostra ("não foi dessa vez, o numero que eu pensei era menor que " + chute);
+			} else {
+
+				mostra ("não foi dessa vez, o numero que eu pensei era menor que " + chute);
+				
+			}
+
+			tentativa++
+
 		}
-
 
 	}
 
